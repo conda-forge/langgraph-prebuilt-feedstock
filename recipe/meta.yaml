@@ -1,5 +1,5 @@
 {% set name = "langgraph-prebuilt" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langgraph_prebuilt-{{ version }}.tar.gz
-  sha256: 0b0da357d9905f28f6e5c89ab6b333815a35cc68f4322b037c21c8c50d0d1d2e
+  sha256: 07f69e088705cd4c9b81e9725b67c10060871b392e500961e605d4cc605a1e13
 
 build:
   noarch: python
