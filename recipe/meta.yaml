@@ -1,5 +1,5 @@
 {% set name = "langgraph-prebuilt" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langgraph_prebuilt-{{ version }}.tar.gz
-  sha256: 43a361612b8fb9784338bfc481245e3422ca366ca8e43f68c4c6723d7eb8b9f4
+  sha256: 2c900a5be0d6a93ea2521e0d931697cad2b646f1fcda7aa5c39d8d7539772465
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }},<4.0
     - langgraph-checkpoint >=2.1.0
-    - langchain-core >=0.3.22
+    - langchain-core >=0.3.67
     - langgraph
 
 test:
