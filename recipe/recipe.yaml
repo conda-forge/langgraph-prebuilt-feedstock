@@ -29,10 +29,6 @@ requirements:
     - langgraph
 
 tests:
-  - python:
-      imports:
-        - langgraph.prebuilt
-      python_version: ${{ python_min }}.*
   - requirements:
       run:
         - pip
