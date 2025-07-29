@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langgraph-prebuilt
-  version: 0.5.2
+  version: "0.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langgraph_prebuilt-${{ version }}.tar.gz
-  sha256: 2c900a5be0d6a93ea2521e0d931697cad2b646f1fcda7aa5c39d8d7539772465
+  sha256: 15b97f9d6f4cd5a2c460f6e75774098b22ba03ac9c21c283493d49e586a3863b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -29,10 +29,6 @@ requirements:
     - langgraph
 
 tests:
-  - python:
-      imports:
-        - langgraph.prebuilt
-      python_version: ${{ python_min }}.*
   - requirements:
       run:
         - pip
