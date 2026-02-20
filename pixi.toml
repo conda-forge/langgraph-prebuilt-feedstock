@@ -5,7 +5,7 @@
 
 [workspace]
 name = "langgraph-prebuilt-feedstock"
-version = "3.54.1"  # conda-smithy version used to generate this file
+version = "3.54.2"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/langgraph-prebuilt-feedstock"
 authors = ["@conda-forge/langgraph-prebuilt"]
 channels = ["conda-forge"]
