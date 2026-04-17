@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langgraph-prebuilt
-  version: "1.0.9"
+  version: "1.0.10"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langgraph_prebuilt-${{ version }}.tar.gz
-  sha256: 93de7512e9caade4b77ead92428f6215c521fdb71b8ffda8cd55f0ad814e64de
+  sha256: 5a6fc513f8907074563b6218ff991c4ed9db19ac63101314919686e8029ddb07
 
 build:
   number: 0
